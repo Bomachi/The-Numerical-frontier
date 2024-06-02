@@ -4203,7 +4203,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -264.7, y: -115.1}
+  m_AnchoredPosition: {x: -249, y: -169}
   m_SizeDelta: {x: -706.0099, y: -552.8368}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &184613256
@@ -4364,7 +4364,7 @@ GameObject:
   - component: {fileID: 496596302}
   - component: {fileID: 496596305}
   m_Layer: 8
-  m_Name: Pongkhun
+  m_Name: Wongyos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4521,6 +4521,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f713eb410df7844d68df7c7668f9b8b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - "\u0E43\u0E04\u0E23"
+    - "\u0E43\u0E04\u0E23"
+    - "\u0E43\u0E04\u0E23\u0E16\u0E32\u0E21..."
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -13267,7 +13272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1330466553
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13335,6 +13340,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1611669138}
+  - component: {fileID: 1611669140}
+  - component: {fileID: 1611669139}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -13357,6 +13364,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1611669139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611669137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4544d7d005c334e2b955a2ffc2476f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 601033253}
+--- !u!114 &1611669140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611669137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff97db448699407fabb3dd58b211c92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 1330466552}
+  dialogText: {fileID: 184613256}
+  lettersPersecond: 40
 --- !u!1 &1886122795
 GameObject:
   m_ObjectHideFlags: 0
