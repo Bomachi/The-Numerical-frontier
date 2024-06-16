@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/The Numerical Frontier.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Prefab/School 1st floor.unity
-    guid: 682347a406f58433da8c47d27f2d17b6
+    path: Assets/Scenes/School 1st floor.unity
+    guid: edec7baf4b0c241f49416c47e55bfc7d
   - enabled: 1
     path: Assets/Scenes/School 2nd floor.unity
     guid: b2b1b604030a640be80450f7e83c92e8
