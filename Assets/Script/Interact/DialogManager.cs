@@ -32,13 +32,14 @@ public class DialogManger : MonoBehaviour
     StartCoroutine(TypeDialog(dialog.Lines[0]));
    }
     public void HandleUpdate(){
-        if (Input.GetKeyDown(KeyCode.F) && !isTyping){
+        if (Input.GetKeyUp(KeyCode.F) && !isTyping){
             ++currentLine;
             if (currentLine < dialog.Lines.Count){
                 StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
             }
             else{
                 dialogBox.SetActive(false);
+                currentLine = 0;
                 OnHideDialog?.Invoke();
             }
         }
