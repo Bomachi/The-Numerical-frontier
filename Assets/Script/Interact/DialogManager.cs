@@ -8,7 +8,6 @@ public class DialogManger : MonoBehaviour
 {
    [SerializeField] GameObject dialogBox;
    [SerializeField] Text dialogText;
-
    [SerializeField] int lettersPersecond;
 
     public event Action OnShowDialog;
@@ -26,7 +25,6 @@ public class DialogManger : MonoBehaviour
    public IEnumerator ShowDialog(Dialog dialog){
     yield return new  WaitForEndOfFrame();
     OnShowDialog?.Invoke();
-
     this.dialog = dialog;
     dialogBox.SetActive(true);
     StartCoroutine(TypeDialog(dialog.Lines[0]));

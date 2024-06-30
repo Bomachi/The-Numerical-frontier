@@ -15722,6 +15722,7 @@ MonoBehaviour:
     - get back
     - to
     - work
+  NPCName: 
 --- !u!114 &601033253 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6257262139434118828, guid: b9aead0446cb443c9b9e36ed444282ca, type: 3}
@@ -25000,6 +25001,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6257262139434118828, guid: b9aead0446cb443c9b9e36ed444282ca, type: 3}
+      propertyPath: moveSpeed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8253854145630320450, guid: b9aead0446cb443c9b9e36ed444282ca, type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0
@@ -25082,6 +25087,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2989404806511703145, guid: 864523c511e774bec906191eb85d23d9, type: 3}
+      propertyPath: m_Text
+      value: Wongyos
+      objectReference: {fileID: 0}
     - target: {fileID: 5320014987080603772, guid: 864523c511e774bec906191eb85d23d9, type: 3}
       propertyPath: m_Pivot.x
       value: 0

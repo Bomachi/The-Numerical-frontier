@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour   {
         Interact();
     }
 
+
     void Interact(){
         
         var facingDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));

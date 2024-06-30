@@ -219,7 +219,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -239,7 +239,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -259,7 +259,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -292,20 +292,20 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: -1585736814, guid: c9fcd40bdfd0c4e0cbb09b0e887466e6, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -1761584562, guid: c9fcd40bdfd0c4e0cbb09b0e887466e6, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -333214461, guid: c9fcd40bdfd0c4e0cbb09b0e887466e6, type: 3}
+    m_Data: {fileID: -1585736814, guid: c9fcd40bdfd0c4e0cbb09b0e887466e6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 889902447, guid: c9fcd40bdfd0c4e0cbb09b0e887466e6, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2051335072, guid: c9fcd40bdfd0c4e0cbb09b0e887466e6, type: 3}
+    m_Data: {fileID: -333214461, guid: c9fcd40bdfd0c4e0cbb09b0e887466e6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 383785794, guid: c9fcd40bdfd0c4e0cbb09b0e887466e6, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 2051335072, guid: c9fcd40bdfd0c4e0cbb09b0e887466e6, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 6
     m_Data:
@@ -457,9 +457,10 @@ GameObject:
   - component: {fileID: 1081588602}
   - component: {fileID: 1081588601}
   - component: {fileID: 1081588600}
+  - component: {fileID: 1081588604}
   m_Layer: 8
   m_Name: npc_1_62
-  m_TagString: Untagged
+  m_TagString: Quiz
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -496,7 +497,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.35036182, y: -0.26302838}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -507,7 +508,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 2.7007236, y: 2.1052113}
   m_EdgeRadius: 0
 --- !u!50 &1081588601
 Rigidbody2D:
@@ -603,6 +604,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1081588604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081588599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9fff5ddda9cf4fcb955a8cbc8561baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneBuildIndex: 5
 --- !u!1 &1401534910
 GameObject:
   m_ObjectHideFlags: 0
