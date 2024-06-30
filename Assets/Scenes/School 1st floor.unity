@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2153950705991338497, guid: 99553d87b3a014b58acee24d9231ed48, type: 3}
+      propertyPath: canvasgroup
+      value: 
+      objectReference: {fileID: 2079480290}
     - target: {fileID: 2403964300332219984, guid: 99553d87b3a014b58acee24d9231ed48, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.511
@@ -471,6 +475,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 759406159429061831, guid: 0efe98a47472b4b6189593dacf9e822e, type: 3}
+      propertyPath: canvasgroup
+      value: 
+      objectReference: {fileID: 2079480290}
     - target: {fileID: 1682776173552035690, guid: 0efe98a47472b4b6189593dacf9e822e, type: 3}
       propertyPath: spawnPoint
       value: 
@@ -542,10 +550,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5076394377661081369, guid: 0efe98a47472b4b6189593dacf9e822e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 685106544}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0efe98a47472b4b6189593dacf9e822e, type: 3}
 --- !u!1001 &627914863
 PrefabInstance:
@@ -678,27 +683,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &685106540 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5076394377661081369, guid: 0efe98a47472b4b6189593dacf9e822e, type: 3}
-  m_PrefabInstance: {fileID: 479530520}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &685106544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685106540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42b2d0bb0d36f41a69e3d9ccb21e7038, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasgroup: {fileID: 2079480290}
-  fadein: 0
-  fadeout: 0
-  TimeToFade: 1
 --- !u!114 &702179662 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2989404806511703145, guid: 864523c511e774bec906191eb85d23d9, type: 3}
@@ -710,6 +694,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &792263829 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 5422194239219936529, guid: 864523c511e774bec906191eb85d23d9, type: 3}
+  m_PrefabInstance: {fileID: 2079480287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &998031123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -718,6 +707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2153950705991338497, guid: 99553d87b3a014b58acee24d9231ed48, type: 3}
+      propertyPath: canvasgroup
+      value: 
+      objectReference: {fileID: 2079480290}
     - target: {fileID: 2403964300332219984, guid: 99553d87b3a014b58acee24d9231ed48, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.49
@@ -3010,6 +3003,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2153950705991338497, guid: 99553d87b3a014b58acee24d9231ed48, type: 3}
+      propertyPath: canvasgroup
+      value: 
+      objectReference: {fileID: 2079480290}
     - target: {fileID: 2403964300332219984, guid: 99553d87b3a014b58acee24d9231ed48, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.506
@@ -3075,6 +3072,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 759406159429061831, guid: 0efe98a47472b4b6189593dacf9e822e, type: 3}
+      propertyPath: canvasgroup
+      value: 
+      objectReference: {fileID: 2079480290}
     - target: {fileID: 1682776173552035690, guid: 0efe98a47472b4b6189593dacf9e822e, type: 3}
       propertyPath: sceneBuildIndex
       value: 7
@@ -3248,6 +3249,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5422194239219936529, guid: 864523c511e774bec906191eb85d23d9, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5422194239219936529, guid: 864523c511e774bec906191eb85d23d9, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5459041526644068124, guid: 864523c511e774bec906191eb85d23d9, type: 3}
       propertyPath: m_SizeDelta.x
       value: -182.0677
@@ -3272,6 +3281,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 17.999146
       objectReference: {fileID: 0}
+    - target: {fileID: 6623381215741248641, guid: 864523c511e774bec906191eb85d23d9, type: 3}
+      propertyPath: TimeToFade
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623381215741248641, guid: 864523c511e774bec906191eb85d23d9, type: 3}
+      propertyPath: canvasgroup
+      value: 
+      objectReference: {fileID: 792263829}
     - target: {fileID: 7352760942809224282, guid: 864523c511e774bec906191eb85d23d9, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -3388,6 +3405,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2153950705991338497, guid: 99553d87b3a014b58acee24d9231ed48, type: 3}
+      propertyPath: canvasgroup
+      value: 
+      objectReference: {fileID: 2079480290}
     - target: {fileID: 2403964300332219984, guid: 99553d87b3a014b58acee24d9231ed48, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.5

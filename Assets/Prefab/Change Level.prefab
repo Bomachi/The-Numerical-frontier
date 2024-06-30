@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5626898647534630484}
   - component: {fileID: 3494933064505670076}
   - component: {fileID: 1682776173552035690}
+  - component: {fileID: 759406159429061831}
   m_Layer: 0
   m_Name: Change Level
   m_TagString: Untagged
@@ -91,3 +92,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneBuildIndex: 2
+--- !u!114 &759406159429061831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5076394377661081369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b2d0bb0d36f41a69e3d9ccb21e7038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasgroup: {fileID: 0}
+  fadein: 0
+  fadeout: 0
+  TimeToFade: 1

@@ -10,29 +10,41 @@ public class Fadeinout : MonoBehaviour
 
     public float TimeToFade;
 
-    void Update(){
-        if (fadein){
-            if (canvasgroup.alpha < 1){
-                canvasgroup.alpha += TimeToFade * Time.deltaTime;
-                if (canvasgroup.alpha >= 1){
+    void Update()
+    {
+        if (fadein == true)
+        {
+            if (canvasgroup.alpha < 1)
+            {
+                canvasgroup.alpha += Time.deltaTime / TimeToFade;
+                if (canvasgroup.alpha >= 1)
+                {
+                    canvasgroup.alpha = 1;
                     fadein = false;
                 }
             }
         }
-        if (fadeout){
-            if (canvasgroup.alpha >= 0){
-                canvasgroup.alpha -= TimeToFade * Time.deltaTime;
-                if (canvasgroup.alpha == 0){
+        if (fadeout == true)
+        {
+            if (canvasgroup.alpha > 0)
+            {
+                canvasgroup.alpha -= Time.deltaTime / TimeToFade;
+                if (canvasgroup.alpha <= 0)
+                {
+                    canvasgroup.alpha = 0;
                     fadeout = false;
                 }
             }
         }
     }
 
-    public void FadeIn(){
+    public void FadeIn()
+    {
         fadein = true;
     }
-    public void FadeOut(){
+
+    public void FadeOut()
+    {
         fadeout = true;
     }
 }

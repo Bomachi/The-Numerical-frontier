@@ -8,13 +8,7 @@ public class FadeController : MonoBehaviour
     void Start()
     {
         fade = FindObjectOfType<Fadeinout>();
-
-        fade.FadeOut();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
+        fade.FadeOut();
     }
 }
