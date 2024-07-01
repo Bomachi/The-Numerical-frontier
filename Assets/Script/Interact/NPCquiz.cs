@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class SceneChangeNPCController : MonoBehaviour, Interactable
 {
     public int sceneBuildIndex;
+    public static String PreviousSceneName;
 
     Fadeinout fade;
 
@@ -21,6 +23,7 @@ public class SceneChangeNPCController : MonoBehaviour, Interactable
 
     public void Interact()
     {
+        PreviousSceneName = SceneManager.GetActiveScene().name;
         StartCoroutine(ChangeScene());
     }
 }

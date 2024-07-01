@@ -13,9 +13,14 @@ public enum OperationType
 public class QuestionManager : MonoBehaviour
 {
     public Text questionText;
+
+    public Text Score;
+
     public Button[] answerButtons;
     public OperationType operationType;
     private int correctAnswer;
+
+    private int CurrentScore = 0;
 
     void Start()
     {
@@ -27,7 +32,14 @@ public class QuestionManager : MonoBehaviour
         int number1 = Random.Range(1, 101);
         int number2 = Random.Range(1, 101);
         correctAnswer = number1 + number2;
-
+        if (CurrentScore < 0){
+            CurrentScore = 0;
+            Score.text = $"Score: {CurrentScore}";
+        }
+        else {
+            Score.text = $"Score: {CurrentScore}";
+        }
+        
         switch (operationType)
         {
             case OperationType.Addition:
@@ -73,10 +85,12 @@ public class QuestionManager : MonoBehaviour
     {
         if (selectedAnswer == correctAnswer)
         {
+            CurrentScore += 1000;
             Debug.Log("Correct!");
         }
         else
         {
+            CurrentScore  -= 500;
             Debug.Log("Incorrect!");
         }
 
